@@ -1,8 +1,12 @@
 const playButton = document.getElementById("playButton");
 const zunoButton = document.getElementById("zunoButton");
 
+const menu = document.getElementById("menu");
+const game = document.getElementById("game");
+
 playButton.addEventListener("click", () => {
-    console.log("play");
+    menu.style.display = "none";
+    game.style.display = "block";
 });
 
 zunoButton.addEventListener("click", () => {
