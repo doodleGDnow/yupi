@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background: #111;
@@ -5,8 +9,76 @@ body {
     font-family: Arial, sans-serif;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 100px;
-    font-size: 80px;
+#topbar {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    background: #181818;
+}
+
+#logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#topbar nav {
+    display: flex;
+    gap: 10px;
+}
+
+#topbar button {
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #ff9800;
+    color: white;
+
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#topbar button:hover {
+    background: #ffad33;
+}
+
+#menu {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+#menu h1 {
+    margin: 0;
+    font-size: 90px;
+}
+
+#playButton {
+    width: 220px;
+    padding: 18px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #ff9800;
+    color: white;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#playButton:hover {
+    background: #ffad33;
 }
